@@ -76,3 +76,7 @@ export const sortTaskDown = (taskA, taskB) => {
 
   return taskB.dueDate.getTime() - taskA.dueDate.getTime();
 };
+
+export const isDatesEqual = (dateA, dateB) => {
+  return moment(dateA).isSame(dateB);
+};
